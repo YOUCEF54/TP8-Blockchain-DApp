@@ -60,3 +60,44 @@ Au cours du développement, plusieurs défis techniques ont dû être résolus :
 
 ## 6. Conclusion
 Ce TP a permis de comprendre le cycle de vie complet d'une DApp, de la compilation du contrat à son intégration dans une application cliente. Il a souligné l'importance de la gestion rigoureuse des configurations réseau (ports, Chain IDs) et des versions de compilateur dans l'écosystème blockchain.
+
+## 7. Comment lancer le projet (Guide pour le clonage)
+
+Pour que ce projet fonctionne sur votre machine après clonage, veuillez suivre ces étapes :
+
+1.  **Prérequis** :
+    *   Flutter SDK installé.
+    *   Ganache (GUI ou CLI) installé et lancé sur le port `7545` (Network ID `5777`).
+    *   Truffle installé (`npm install -g truffle`).
+
+2.  **Installation** :
+    ```bash
+    git clone https://github.com/YOUCEF54/TP8-Blockchain-DApp.git
+    cd TP8-Blockchain-DApp
+    # Installer les dépendances Flutter
+    flutter pub get
+    # Installer les dépendances Truffle (si nécessaire)
+    npm install
+    ```
+
+3.  **Déploiement des Contrats** :
+    Assurez-vous que Ganache est ouvert, puis :
+    ```bash
+    truffle migrate --reset
+    # Copier l'abi généré vers les assets Flutter
+    # (Sur Windows)
+    copy "build\contracts\HelloWorld.json" "src\artifacts\HelloWorld.json"
+    ```
+
+4.  **⚠️ Configuration Critique (Clé Privée)** :
+    Le fichier `lib/contract_linking.dart` contient une clé privée codée en dur pour signer les transactions. **Cette clé est spécifique à mon environnement local.**
+    *   Ouvrez Ganache.
+    *   Copiez la **Private Key** de l'un des comptes.
+    *   Ouvrez `lib/contract_linking.dart`.
+    *   Remplacez la valeur de la variable `_privateKey` par votre clé.
+
+5.  **Lancement** :
+    ```bash
+    flutter run
+    ```
+    (Si vous utilisez Chrome, assurez-vous que l'URL RPC est bien `http://127.0.0.1:7545` dans `contract_linking.dart`).
