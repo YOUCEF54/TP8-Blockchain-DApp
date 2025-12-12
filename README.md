@@ -1,5 +1,8 @@
 # Rapport de TP 8 : Application Décentralisée (DApp) avec Flutter et Truffle
 
+## Réalisé par : Youcef EL OMARI
+## Filiére : ADIA
+
 Ce document résume la démarche suivie pour la réalisation du Travail Pratique n°8, qui consiste à créer une application mobile capable d'interagir avec un contrat intelligent (Smart Contract) sur une blockchain locale.
 
 ## 1. Objectif
