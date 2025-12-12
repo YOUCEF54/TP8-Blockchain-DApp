@@ -1,9 +1,13 @@
-# Rapport de TP 8 : Application Décentralisée (DApp) avec Flutter et Truffle---
+# Rapport de TP 8 : Application Décentralisée (DApp) avec Flutter et Truffle
+
+---
 
 **Réalisé par**
 * **Prénom :** Youcef
 * **Nom :** EL OMARI
 * **Filière :** ADIA
+
+---
 
 ## 1. Objectif
 L'objectif principal est de développer une **DApp** (Application Décentralisée) permettant à un utilisateur de lire et de modifier une variable d'état ("yourName") stockée sur la blockchain Ethereum via une interface Flutter.
