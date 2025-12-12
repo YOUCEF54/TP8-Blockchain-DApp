@@ -1,7 +1,8 @@
 # Rapport de TP 8 : Application Décentralisée (DApp) avec Flutter et Truffle---
 
 **Réalisé par**
-* **Nom et Prénom :** Youcef EL OMARI
+* **Prénom :** Youcef
+* **Nom :** EL OMARI
 * **Filière :** ADIA
 
 ## 1. Objectif
